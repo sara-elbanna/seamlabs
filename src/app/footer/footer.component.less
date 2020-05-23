@@ -1,0 +1,41 @@
+@import '../../styles.less';
+.footer{
+    background-image: url("/assets/img/footer.svg");
+    height: 550px;
+    padding-top: 250px;
+    color: #fff;
+}
+.wrap{
+    padding: 0 10px 0 140px;
+}
+.hours{
+    display: flex;
+    .left{
+        margin-right: 20px;
+    }
+}
+h1,h2,h3{
+    color: #fff;
+    font-weight: bold;
+}
+
+@media(max-width: @screen-md){
+    .wrap{
+        padding: 0 30px ;
+    }
+    .hours-col{
+        display: none
+    }
+    .footer{
+        padding-top: 150px;
+        background-position-x: center;
+    }
+    .logo{
+        margin-bottom: 60px;
+    }
+}
+@media(max-width: @screen-lg){
+    .wrap{
+        padding: 0 10px 0 40px;
+    }
+}

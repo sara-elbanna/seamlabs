@@ -1,0 +1,16 @@
+<div class="subscription">
+    <div class="vertical-horizontal-center">
+        <h1 class="title">Do you want to get <b>Special News?</b></h1>
+            <form [formGroup]="form" (ngSubmit)="onSubmit()" class="row" >
+                <div class="input" >
+                    <input placeholder="Drop your email" nz-input formControlName="email"/>
+                </div>
+                <div class="btn" >
+                    <button type="submit" class="seams-btn">Subscribe</button>
+                </div>
+            </form>
+        
+    </div>
+    
+    
+</div>

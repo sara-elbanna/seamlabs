@@ -1,0 +1,25 @@
+<div class="drawer">
+    <div class="logo">
+        <a routerLink="/dashboard"><img src='assets/img/logo white.svg'/></a>
+    </div>
+    <div class="wrapper">
+        <button nz-button nzType="primary" (click)="toggleCollapsed()">
+          <i nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
+        </button>
+        <ul [class.hide]='isCollapsed' nz-menu nzMode="inline"  [nzInlineCollapsed]="isCollapsed">
+          <li nz-menu-item nz-tooltip nzTooltipPlacement="right" [nzTitle]="isCollapsed ? 'Navigation One' : ''" nzSelected>
+            <span>Home</span>
+          </li>
+          <li nz-menu-item nz-tooltip nzTooltipPlacement="right" [nzTitle]="isCollapsed ? 'Navigation One' : ''" nzSelected>
+            <span>Service</span>
+          </li>
+          <li nz-menu-item nz-tooltip nzTooltipPlacement="right" [nzTitle]="isCollapsed ? 'Navigation One' : ''" nzSelected>
+            <span>Service</span>
+          </li>
+          <li nz-menu-item nz-tooltip nzTooltipPlacement="right" [nzTitle]="isCollapsed ? 'Navigation One' : ''" nzSelected>
+            <span>Service</span>
+          </li>
+
+        </ul>
+      </div>
+</div>

@@ -1,0 +1,83 @@
+@import '../../styles.less';
+
+h1{
+    margin-bottom: 50px;
+
+}
+.pricing{
+    background-color: #efefef;
+    text-align: center;
+    padding: 60px;
+
+}
+
+.card{
+    margin-right: 4%;
+    width: 27%;
+    display: inline-block;
+    text-align: center;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;    
+    &.isActive{
+        transform: scale(1.2);
+    }
+    cursor: pointer;
+    .title{
+        margin: 40px 0 75px;
+    }
+    .price{
+        margin: 45px;
+    }
+    
+}
+.dots{
+    margin: 80px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dot{
+        margin-right: 5px;
+        width: 7px;
+        height: 7px;
+        border: 1.5px solid #a5a5a5;
+        display: inline-block;
+        border-radius: 20px;
+        cursor: pointer;
+        &.isActive{
+            background-color: #6573bd;
+            width: 13px;
+            height: 13px;
+            border-color: #6573bd;
+        }
+    }
+
+}
+@media(max-width: @screen-lg){
+
+    .card {
+        width: 45%;
+        margin-right: 2.5%;
+        &.isActive{
+            transform: scale(1);
+        }
+    }
+    
+}
+@media(max-width: @screen-sm){
+    .card {
+        width: 100%;
+        margin-right: 0;
+        &:not(.isActive){
+            display: none
+        }
+    }
+}

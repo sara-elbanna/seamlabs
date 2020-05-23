@@ -1,0 +1,16 @@
+<div class="pricing">
+    <h1>Our Pricing</h1>
+    <div class="list">
+        <div [class.isActive]="i==1" (click)="selectItem(item.id)" class="card" *ngFor = "let item of filtered_list; let i = index">
+                <h2 class="title">{{item.title}}</h2>
+                <p>{{item.description}}</p>
+                <h2 class="price">{{item.price}}</h2>
+                <button class="seams-btn secondary">see details</button>            
+        </div>
+    </div>
+    <div class="dots">
+        <span (click)="selectItem(item.id)" class="dot" [class.isActive]="i==selectedItem" *ngFor = "let item of list; let i = index">
+           
+        </span>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+@import '../../styles.less';
+.header{
+    .row{
+        display: flex;
+        width: 100%;
+    }
+    position: relative;
+    .content{
+        padding-top: 100px;
+    }
+    .left,.right{
+        width: 50%;
+    }
+    .left .content {
+        text-transform: uppercase;
+        margin: 100px auto;
+        width: 60%;
+        line-height: 1;
+        h1{
+            // font-size: 53px;
+            font-weight: bolder;
+        }
+    }
+    .right{
+        background-image: url("/assets/img/Bg-Shape.svg");
+        background-repeat: no-repeat;
+    }
+    
+}
+
+
+@media(max-width: @screen-md){
+    .left,.right{
+        width: 100% !important;
+    }
+    .row{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .content {
+        margin: 0 !important;
+        width: 100% !important;      
+    }
+    .left .content{
+        padding: 20px !important;
+    }
+    .right.content{
+        // height: 500px;
+        padding: 30px !important;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
+@media(min-width: @screen-md){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
+@media(min-width: @screen-lg){
+    .left .content h1{
+        font-size: 53px;
+    }
+    .header{
+        margin-bottom: 140px;
+    }
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    
+
+}

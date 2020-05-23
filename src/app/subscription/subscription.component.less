@@ -1,0 +1,53 @@
+@import '../../styles.less';
+
+.subscription{
+    text-align: center;
+    padding: 150px 20px 50px;
+}
+.title{
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.row{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    .input{
+        width: 70%;
+        height: 55px;
+        margin-bottom: 10px;
+    }
+    .btn{
+        height: 55px;
+        button{
+            height: 100%;
+            width: 155px;
+        }
+    }
+    
+}
+.ant-input{
+    height: 100%;
+    background-color: #f1f1f1;
+    border: none;
+}
+// @media(min-width: @screen-md){
+//     .subscription{
+//         padding-top: 150px;
+//         padding-bottom: 50px;
+//     }
+// }
+@media(max-width: @screen-md){
+   .row{
+       flex-direction: column;
+       text-align: right;
+       width: 100%;
+       .input{
+        width: 100%;
+    }
+   }
+   .subscription{
+        padding: 20px 20px 20px;
+    }   
+}
