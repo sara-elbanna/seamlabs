@@ -1,0 +1,15 @@
+<div class="services">
+    <!-- <div class="container"> -->
+        <h1 class="title">What We Offer</h1>
+        <div  class="list">
+            <div class="block" *ngFor="let item of services_list" >
+                <div class="img"><img src='assets/img/{{item.icon}}'/></div>
+                <h3>{{item.title}}</h3>
+                <p>{{item.description}}</p>
+                <div class="more"><button class="seams-btn">see more</button></div>
+                
+            </div>
+        </div>
+    <!-- </div> -->
+    
+</div>
